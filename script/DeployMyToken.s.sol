@@ -14,6 +14,4 @@ contract DeployMyToken is Script {
         vm.stopBroadcast();
         return myToken;
     }
-    
 }
-

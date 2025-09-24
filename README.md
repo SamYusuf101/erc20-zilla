@@ -1,66 +1,55 @@
-## Foundry
+# Zilla (ZIL) Token
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+# 📸 Screenshot
 
-Foundry consists of:
+![Chatbot Screenshot](image/myToken.png)
+![Chatbot Screenshot](image/Deploy.png)
+![Chatbot Screenshot](image/test.png)
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+An ERC-20 compliant smart contract built with Solidity and OpenZeppelin, structured using the Foundry development framework.
 
-## Documentation
+---
 
-https://book.getfoundry.sh/
+## 📌 Overview
 
-## Usage
+Zilla (ZIL) is a standard ERC-20 token implemented for educational and development purposes. It demonstrates secure token creation, minting during contract deployment, and serves as a foundation for extending more advanced smart contract features.
 
-### Build
+---
 
-```shell
-$ forge build
-```
+## ⚙️ Stack & Tooling
 
-### Test
+- **Solidity** ^0.8.18
+- **Foundry** (Anvil, Forge)
+- **OpenZeppelin Contracts** v4.x
+- **Ethereum (EVM)**
 
-```shell
-$ forge test
-```
+---
 
-### Format
+## 🔧 Features
 
-```shell
-$ forge fmt
-```
+- ✅ ERC-20 Standard Implementation
+- ✅ Token minting in constructor (initial supply to deployer)
+- ✅ Modular architecture for future upgrades (e.g., access control, mint/burn/pause logic)
+- 🧪 Designed for full test coverage with Forge (coming soon)
 
-### Gas Snapshots
+## 🚀 Quick Start
 
-```shell
-$ forge snapshot
-```
+### 1. Clone the repository
 
-### Anvil
+```bash
+git clone https://github.com/yourusername/mytoken.git
+cd mytoken
 
-```shell
-$ anvil
-```
+## Install Foundry (if not already installed)
 
-### Deploy
+curl -L https://foundry.paradigm.xyz | bash
+foundryup
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+## Build the project
+forge build
 
-### Cast
+## Run tests (once available)
+forge test
 
-```shell
-$ cast <subcommand>
-```
 
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
 ```
